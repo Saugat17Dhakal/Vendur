@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendur</title>
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+     <!-- Loader -->
+    <div class="loader">
+
+    </div>
+     <!-- Loader End -->
+
+    <!-- Navigation -->
+    
+        <header>
+            <!-- Navbar Container -->
+            <div class="container">
+                <!-- Navbar Start-->
+                <nav>
+                    <!-- Icons -->
+                    <div class="menu-icons">
+                    <i class="fas fa-bars bars fa-2x" id="icon"></i>
+                    <i class="fas fa-times times fa-2x" id="icon"></i>
+                    </div>
+                    <!-- LOGO -->
+                    <svg  xmlns="http://www.w3.org/2000/svg" class="logo" id="svg63067" viewBox="0 0 1024 768" height="200px" width="250px" version="1.1">
+           
+                  <path id="path63076" style="font-style:normal;font-weight:800;font-size:72px;line-height:1;font-family:'Montserrat ExtraBold Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 386.62381,-50.4 h -15.408 l 14.328,33.696 7.704,-17.64 z m 27.648,0 -13.968,32.832 -7.56,17.568 h 14.04 l 21.6,-50.4 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#3C5DD9" stroke="#3C5DD9" transform="translate(0 329.65767999999997) translate(252.1742749999999 9.68) scale(1.86) translate(-371.21581 50.4)"></path>
+                  <path id="path63078" style="font-style:normal;font-weight:800;font-size:72px;line-height:1;font-family:'Montserrat ExtraBold Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 467.25931,-16.056 c 0.144,-2.16 0.216,-3.24 0.216,-3.384 0,-4.176 -0.936,-7.776 -2.808,-10.8 -1.872,-3.024 -4.32,-5.4 -7.488,-6.984 -3.168,-1.584 -6.696,-2.448 -10.584,-2.448 -4.104,0 -7.776,0.864 -11.016,2.592 -3.312,1.728 -5.832,4.176 -7.704,7.2 -1.872,3.024 -2.736,6.48 -2.736,10.296 0,3.888 0.936,7.416 2.808,10.44 1.872,3.096 4.608,5.472 8.064,7.2 3.456,1.728 7.416,2.592 12.024,2.592 7.272,0 12.816,-2.088 16.632,-6.336 l -7.2,-7.488 c -1.44,1.224 -2.808,2.088 -4.176,2.592 -1.368,0.576 -2.952,0.792 -4.824,0.792 -2.52,0 -4.608,-0.504 -6.264,-1.584 -1.656,-1.08 -2.736,-2.664 -3.312,-4.68 z m -25.92,-12.096 c 1.44,-1.152 3.168,-1.8 5.328,-1.8 2.088,0 3.816,0.648 5.256,1.8 1.44,1.224 2.304,2.88 2.736,4.896 h -15.984 c 0.36,-2.016 1.224,-3.672 2.664,-4.896 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#3C5DD9" stroke="#3C5DD9" transform="translate(0 329.65767999999997) translate(352.47198499999996 29.634080000000004) scale(1.86) translate(-425.13931 39.672)"></path>
+                  <path id="path63080" style="font-style:normal;font-weight:800;font-size:72px;line-height:1;font-family:'Montserrat ExtraBold Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 510.93294,-35.352 c -2.952,-2.88 -6.84,-4.32 -11.664,-4.32 -2.52,0 -4.824,0.432 -6.912,1.296 -2.16,0.864 -3.96,2.016 -5.472,3.6 v -4.248 h -13.032 V 0 h 13.68 v -18.864 c 0,-3.024 0.648,-5.328 2.088,-6.912 1.44,-1.512 3.312,-2.304 5.688,-2.304 4.248,0 6.408,2.664 6.408,7.992 V 0 h 13.68 v -22.32 c 0,-5.76 -1.512,-10.152 -4.464,-13.032 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#3C5DD9" stroke="#3C5DD9" transform="translate(0 329.65767999999997) translate(443.07933679999985 29.634080000000004) scale(1.86) translate(-473.85294 39.672)"></path>
+                  <path id="path63082" style="font-style:normal;font-weight:800;font-size:72px;line-height:1;font-family:'Montserrat ExtraBold Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 565.94994,-53.424 h -13.68 v 17.784 c -2.592,-2.664 -6.192,-4.032 -10.8,-4.032 -3.6,0 -6.84,0.864 -9.72,2.448 -2.952,1.656 -5.256,4.032 -6.984,7.056 -1.728,3.024 -2.52,6.552 -2.52,10.584 0,4.032 0.792,7.632 2.52,10.656 1.728,3.096 4.032,5.472 6.984,7.128 2.88,1.656 6.12,2.448 9.72,2.448 5.04,0 8.856,-1.512 11.448,-4.536 V 0 h 13.032 z m -15.768,40.752 c -1.584,1.656 -3.528,2.448 -5.832,2.448 -2.448,0 -4.392,-0.792 -5.904,-2.448 -1.584,-1.656 -2.304,-3.96 -2.304,-6.912 0,-2.88 0.72,-5.112 2.304,-6.768 1.512,-1.584 3.456,-2.448 5.904,-2.448 2.376,0 4.32,0.864 5.832,2.448 1.512,1.656 2.304,3.888 2.304,6.768 0,2.952 -0.792,5.256 -2.304,6.912 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#3C5DD9" stroke="#3C5DD9" transform="translate(0 329.65767999999997) translate(533.0903168 4.05536) scale(1.86) translate(-522.24594 53.424)"></path>
+                  <path id="path63084" style="font-style:normal;font-weight:800;font-size:72px;line-height:1;font-family:'Montserrat ExtraBold Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 615.72106,-39.024 h -13.68 v 18.792 c 0,3.168 -0.72,5.472 -2.088,6.984 -1.368,1.512 -3.096,2.232 -5.256,2.232 -2.16,0 -3.744,-0.648 -4.824,-2.016 -1.152,-1.296 -1.656,-3.456 -1.656,-6.408 v -19.584 h -13.68 v 21.816 c 0,5.976 1.44,10.44 4.464,13.392 3.024,3.024 7.056,4.464 12.096,4.464 2.232,0 4.392,-0.36 6.408,-1.224 2.016,-0.792 3.744,-2.016 5.184,-3.6 V 0 h 13.032 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#3C5DD9" stroke="#3C5DD9" transform="translate(0 329.65767999999997) translate(630.3518 30.839359999999992) scale(1.86) translate(-574.53706 39.024)"></path>
+                  <path id="path63086" style="font-style:normal;font-weight:800;font-size:72px;line-height:1;font-family:'Montserrat ExtraBold Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 642.89431,-38.304 c -2.232,0.864 -4.032,2.232 -5.4,3.96 v -4.68 h -13.032 V 0 h 13.68 v -17.928 c 0,-3.24 0.792,-5.688 2.448,-7.272 1.656,-1.584 3.96,-2.376 6.912,-2.376 0.792,0 1.8,0.072 3.096,0.216 v -12.312 c -2.88,0 -5.472,0.504 -7.704,1.368 z" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#3C5DD9" stroke="#3C5DD9" transform="translate(0 329.65767999999997) translate(723.2127650000001 29.634080000000004) scale(1.86) translate(-624.46231 39.672)"></path>
+          
+          </svg>
+          <!-- LOGO End -->
+          <!-- Nav Links -->
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">DOCS&nbsp;
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Documentation
+                                    </a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="#">Changelog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Components
+                                    </a>
+                                   
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Matches&nbsp;
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="sub-menu">
+                               
+                                <li>
+                                    <a href="#">    Match&nbsp;
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="sub-menu">
+                                     
+                                          
+                                                <li>
+                                                    <a href="#">Match Replays</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">    Match Scores</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Recent Matches</a>
+                                                </li>
+                                            
+                                      
+                                       
+                                      
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">    About &nbsp;
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="sub-menu">
+                                     
+                                          
+                                                <li>
+                                                    <a href="#">Match Lineups</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Match Overview</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Match Stats</a>
+                                                </li>
+                                            
+                                      
+                                       
+                                      
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Standings</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Blogs</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="move-right btn">
+                            <a href="#" style="color: #fff;">Buy Now</a>
+                        </li>
+                    </ul>
+                    <!--Nav-links End -->
+                </nav>
+                <!-- Navbar End -->
+            </div>
+          </header>
+  
+        
+    <!-- Navigation End -->
+
+    <!-- Showcase -->
+     <section class="showcase" id="hero">
+         <!-- Content -->
+         <div class="showcase-content">
+             <!-- Heading -->
+            <h1 class="showcase-head">A modern design system for your new <br> 
+                <!--Typewriter Effect-->
+                <span class="txt-type colored" data-wait="3000" data-words='["Coworking Space", "online course", "SaaS Platform"]'></span>
+             <!-- Typewriter Effect End-->
+            </h1>
+              <!-- -->
+       <p class="showcase-lead">
+     <span class="colored"> Vendur</span> will make your product look modern and professional while saving you precious time.
+       </p>
+       <!-- Buttons -->
+       <div class="button">
+       <a href="#" class="cta cta-1">
+           Pricing and Plans!
+       </a>
+       
+       <a href="#" class="cta cta-2">
+        Documentation &nbsp; <i class="fas fa-arrow-right"></i>
+    </a>
+    </div>
+    <!-- Buttons End-->
+    </div>
+    <!-- Content End -->
+    <!-- Image -->
+    <div class="showcase-image">
+     <img src="src/img/hero-image.jpg" alt="">
+    </div>
+     </section>
+     
+     <!-- Showcase End -->
+
+    <!-- Intro Content -->
+    <section id="brands">
+     <div class="clients">
+         <img class="brand" src="src/img/clients/client-01.svg" alt="">
+         <img class="brand" src="src/img/clients/client-02.svg" alt="">
+         <img class="brand" src="src/img/clients/client-03.svg" alt="">
+         <img class="brand" src="src/img/clients/client-04.svg" alt="">
+         <img class="brand" src="src/img/clients/client-05.svg" alt="">
+         <img class="brand" src="src/img/clients/client-06.svg" alt="">
+     </div>
+    </section>
+    <!-- Intro Content End -->
+
+    <!-- Main Content -->
+    <main class="main-content">
+    <section id="services">
+     <div class="service">
+         <!-- Icon -->
+         <div class="service-logo">
+<img src="src/img/services/service-01.svg" alt="">
+         </div>
+         <!-- Head -->
+         <h1 class="service-head">
+            Built for developers
+         </h1>
+         <!-- Para -->
+         <p class="service-lead">
+            Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components.
+         </p>
+     </div>
+     <div class="service">
+        <!-- Icon -->
+        <div class="service-logo">
+<img src="src/img/services/service-02.svg" alt="">
+        </div>
+        <!-- Head -->
+        <h1 class="service-head">
+            Designed to be modern
+        </h1>
+        <!-- Para -->
+        <p class="service-lead">
+            Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.        </p>
+    </div>
+     <div class="service">
+        <!-- Icon -->
+        <div class="service-logo">
+<img src="src/img/services/service-03.svg" alt="">
+        </div>
+        <!-- Head -->
+        <h1 class="service-head">
+            Documentation for everything
+        </h1>
+        <!-- Para -->
+        <p class="service-lead">
+            We've written extensive documentation for components and tools, so you never have to reverse engineer anything.        </p>
+    </div>
+   
+    </section>
+    <section class="figma-file" id="figma-file">
+        <div class="content">
+     <h1 class="head">
+        We include a Figma file for easy design.
+     </h1>
+     <p class = "lead">
+        We include an unofficial Figma file with Vendur. It's not perfectly organized, but it's component based and covers all our landings, pages, authentication options, and even navigations.
+     </p>
+        </div>
+        <div class="image">
+            <img src="https://goodkit.goodthemes.co/assets/img/homepage/figma.jpg" alt="">
+        </div>
+    </section>
+    <section class="what-we-do">
+        <div class="content">
+            <h3 class="head">
+                WHAT WE DO
+            </h3>
+            <h1 class="heading">
+                Innovations and impact
+            </h1>
+        <p class="lead">
+            Rise helps marketing leaders make smarter media investment decisions data.
+        </p>
+        <div class="button">
+            <a href="#" class="btn what-we-do-btn">DISCOVER MORE</a>
+        </div>
+        </div>
+        <div class="features">
+         <div class="feature">
+             <div class="icon">
+                <i class="fab fa-searchengin fa-4x"></i>
+             </div>
+             <h3 class="heading">
+                 Search Engine Optimization
+             </h3>
+             <p class="para">
+                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aperiam iste provident corrupti reprehenderit fuga eum obcaecati architecto repudiandae cumque.
+             </p>
+
+         </div>
+         <div class="feature">
+            <div class="icon">
+               <i class="fab fa-searchengin fa-4x"></i>
+            </div>
+            <h3 class="heading">
+                Web Development
+            </h3>
+            <p class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aperiam iste provident corrupti reprehenderit fuga eum obcaecati architecto repudiandae cumque.
+            </p>
+
+        </div>
+        <div class="feature">
+            <div class="icon">
+               <i class="fab fa-searchengin fa-4x"></i>
+            </div>
+            <h3 class="heading">
+                Web Design
+            </h3>
+            <p class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aperiam iste provident corrupti reprehenderit fuga eum obcaecati architecto repudiandae cumque.
+            </p>
+
+        </div>
+        </div>
+    </section>
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Footer -->
+    <footer class="footer-container">
+
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Custom Script File-->
+
+    <script src="src/js/script.js"></script>
+
+    <!-- Font-Awesome File-->
+    <script src="src/js/vendor/font-awesome.js"></script>
+    
+</body>
+</html>
