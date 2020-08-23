@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vendur</title>
     <link rel="stylesheet" href="src/css/main.css">
@@ -41,7 +42,7 @@
           <!-- Nav Links -->
                     <ul class="nav-list">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#" class="active">Home</a>
                         </li>
                         <li>
                             <a href="#">DOCS&nbsp;
@@ -65,13 +66,13 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Matches&nbsp;
+                            <a href="#">Pages &nbsp;
                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </a>
                             <ul class="sub-menu">
                                
                                 <li>
-                                    <a href="#">    Match&nbsp;
+                                    <a href="#">Landing &nbsp;
                                         <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                     </a>
                                     <ul class="sub-menu">
@@ -93,7 +94,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">    About &nbsp;
+                                    <a href="#"> Software &nbsp;
                                         <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                     </a>
                                     <ul class="sub-menu">
@@ -115,7 +116,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Standings</a>
+                                    <a href="#">Help Center</a>
                                 </li>
                             </ul>
                         </li>
@@ -403,7 +404,7 @@
         <p class="lead">
             Good Themes knows our company doesn't thrive without our customers. You will always be the priority for us.
         </p>
-        <div class="container">
+        <div class="counter-container">
             <div>
                 <div class="counter" data-target="150">0
                    </div>
@@ -428,9 +429,9 @@
           <div class="slide slide-1">
             <div class="slide-text">
               <p class="testimonial-text">
-                “ I’ve been interested in coding for a while but never taken the jump, until now. 
-      I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-      excited about the future. ”
+                “ 
+                I've been patiently waiting for this to arrive after using Vendur for a while on my project. This is fantastic work as usual by Saugat Dhakal. Keep up the good work!
+               ”
               </p>
               <p class="author-text">Ross Geller
                 <span>UX Engineer</span></p>
@@ -442,11 +443,25 @@
           <div class="slide slide-2">
             <div class="slide-text">
               <p class="testimonial-text">
-                “ If you want to lay the best foundation possible I’d recommend taking this course. 
-      The depth the instructors go into is incredible. I now feel so confident about 
-      starting up as a professional developer. ”
+                “ 
+                This theme is amazing. The code is the best I've seen for a theme. Easy to extend, stays true to CSS...also excited on how it's getting continual updates and support.
+               ”
               </p>
               <p class="author-text">Rachel Greene
+                <span>Junior Front-end Developer</span></p>
+            </div>
+            <div class="slide-img">
+              <img src="src/img/testimonials/image-emma.jpg" alt="img">
+            </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="slide-text">
+              <p class="testimonial-text">
+                “ 
+                Very easy to work with! Was able to quickly get something beautiful and performant up and running in minutes. Straightforward to customize, as well. Vendur is 🔥!!!
+               ”
+              </p>
+              <p class="author-text">Emmma Geller Greene
                 <span>Junior Front-end Developer</span></p>
             </div>
             <div class="slide-img">
@@ -516,23 +531,287 @@
                         <img src="src/img/porfolio/p9.jpg" alt="portfolio" />
                    </div>
                    </div>
-                   <div class="box" data-id="photography">
-                    <div class="inner">
-                        <img src="src/img/porfolio/p10.jpg" alt="portfolio" />
-                   </div>
-                   </div>
+                   
               </div>
         </div>
      </section>
-     
-     
+     <section class="pricing-table">
+         <h1 class="head">
+            Simple, transarent pricing
+         </h1>
+         <div class="options">
+         <h3 class="anually">
+      Billed Anually
+         </h3>
+         <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+         <h3 class="monthly">
+      Billed Monthly
+         </h3>
+        </div>
+        <div id="flexy" class="flex-table">
+            <div class="price-box">
+                <h4>Basic</h4>
+                <p>
+                    <span class="monthly">
+                        &dollar;19.99
+                    </span>
+                    <span class="annually">
+                        &dollar;199.99
+                    </span>
+                </p>
+                <ul>
+                    <li>500 GB Storage</li>
+                    <li>2 Users Allowed</li>
+                    <li>Send up to 3 GB</li>
+                    <li>Send up to 3 GB</li>
+                    <li>Send up to 3 GB</li>
+                </ul>
+                <button>Learn More</button>
+            </div>
+
+            <div class="price-box price-box-premium">
+                <h4>Professional</h4>
+                <p>
+                    <span class="monthly">
+                        &dollar;24.99
+                    </span>
+                    <span class="annually">
+                        &dollar;249.99
+                    </span>
+                </p>
+                <ul style="border-top: 1px solid #fff !important;">
+                    <li>1 TB Storage</li>
+                    <li>5 Users Allowed</li>
+                    <li>Send up to 10 GB</li>
+                    <li>Send up to 10 GB</li>
+                    <li>Send up to 10 GB</li>
+                </ul>
+                <button>Learn More</button>
+            </div>
+
+            <div class="price-box">
+                <h4>Master</h4>
+                <p>
+                    <span class="monthly">
+                        &dollar;39.99
+                    </span>
+                    <span class="annually">
+                        &dollar;399.99
+                    </span>
+                </p>
+                <ul>
+                    <li>2 TB Storage</li>
+                    <li>10 Users Allowed</li>
+                    <li>Send up to 20 GB</li>
+                    <li>Send up to 20 GB</li>
+                    <li>Send up to 20 GB</li>
+                </ul>
+                <button>Learn More</button>
+            </div>
+        </div>
+     </section>
+     <section class="accordion-container">
+<h3 class="head">
+    Frequently Asked Questions
+</h3>
+<div class="accordion">
+    <div class="accordion-item">
+      <h3 class="accordion-item-header">
+        Will this theme work with Rails? React? Plain HTML?
+      </h3>
+      <div class="accordion-item-body">
+        <p class="accordion-item-body-content">
+            Yup! We're working on writing an intergration guide, but the bottom line is we provide basic 
+            HTML, CSS, and JS that you can use in basically any framework. If you want to integrate our 
+            markup, SCSS, and JS compilation into your app instead of using our provided build tools, that's
+             also possible, though it requires some effort.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-item-header">
+        Can I use the icons, images and illustrations?
+      </h3>
+      <div class="accordion-item-body">
+        <p class="accordion-item-body-content">
+            Yup! All the assets have been properly licensed so you can use them in your personal
+             or commerical projects!
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-item-header">
+        Is this theme easy to use for new coders?
+      </h3>
+      <div class="accordion-item-body">
+        <p class="accordion-item-body-content">
+            Yup! If you're just learning to work with CSS and HTML, you'll have to learn a few new setup
+             steps, but we keep our tools and code simple, well documented and clean as a good example 
+             for all!
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-item-header">
+        Does this theme have technical support?
+      </h3>
+      <div class="accordion-item-body">
+        <p class="accordion-item-body-content">
+            Yup! You can reach us once you purchase your theme via the Saugat Themes dashboard
+             or via the email distributed with your theme after your purchase.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+     </section>
     </main>
     <!-- Main Content End -->
 
     <!-- Footer -->
     <footer class="footer-container">
+   <div class="up-section">
+       <div class="logo">
+<a href="#" class="f-logo">
+<img src="src/img/logo.svg" alt="">
+</a>
+</div>
+<ul>
+    <h1>
+        Company
+    </h1>
+    <li>
+        <a href="#">
+Teams
+        </a>
+    </li>
+    <li>
+        <a href="#">
+Services
+        </a>
+    </li>
+    <li>
+        <a href="#">
+Contact Us
+        </a>
+    </li>
+    <li>
+        <a href="#">
+Support
+        </a>
+    </li>
 
+</ul>
+<ul>
+    <h1>About</h1>
+    <li>
+        <a href="#">
+Team & Company
+        </a>
+    </li>
+    <li>
+        <a href="#">
+Location
+        </a>
+    </li>
+    <li>
+        <a href="#">
+About
+        </a>
+    </li>
+    <li>
+        <a href="#">
+Our Services
+        </a>
+    </li>
+
+</ul>
+<ul>
+    <h1>
+        Contact Us
+    </h1>
+    <li>
+        <p>+9779847486497</p>
+    </li>
+    <li>
+        <p>Sanobharyang, Kathmandu</p>
+    </li>
+    <li>
+        <p>saugatdhakal19@gmail.com</p>
+    </li>
+</ul>
+   </div>
+   <div class="dwn-section">
+ 
+    <ul>
+        <h1>About</h1>
+        <li>
+            <a href="#">
+    Team & Company
+            </a>
+        </li>
+        <li>
+            <a href="#">
+    Location
+            </a>
+        </li>
+        <li>
+            <a href="#">
+    About
+            </a>
+        </li>
+        <li>
+            <a href="#">
+    Our Services
+            </a>
+        </li>
+    
+    </ul>
+    <ul>
+        <h1>
+            Contact Us
+        </h1>
+        <li>
+            <p>+9779847486497</p>
+        </li>
+        <li>
+            <p>Sanobharyang, Kathmandu</p>
+        </li>
+        <li>
+            <p>saugatdhakal19@gmail.com</p>
+        </li>
+    </ul>
+    <div class="social">
+        <h1>
+            Social
+        </h1>
+        <div class="social-icons">
+            <a href="#">
+                <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+        </div>
+    </div>
+    <div class="search">
+        <h1>
+            Email
+        </h1>
+        <input type="email" placeholder="Enter your Email" >
+    </div>
+       </div>
+       <p class="copyright">
+           Copyright &copy; Saugat Themes 2020, All rights reserved.
+       </p>
     </footer>
+
     <!-- Footer End -->
      
     <!-- Custom Script File-->
